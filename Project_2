@@ -8,6 +8,7 @@ int main()
   cout << "Long Beach City College" << endl;
   cout << "Author: Chandaralong" << endl;
   cout << "Mar. 10, 2020" << endl;
+  cout << "======================================================================" << endl;
   
   //Declare and Initialize variables with appropriate types
   int ID;
