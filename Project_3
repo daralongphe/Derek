@@ -24,8 +24,13 @@ int main()
     cout << fixed << showpoint << setprecision(2);
     cout << left;
     cout << fname << " " << lname << endl;
-    cout << "Gross amount: " << "$" << gross << endl;
-    cout << "Federal Tax: " << "$ " << (15*gross)/100 << endl;
+    cout << "Gross amount: ";
+    cout.unsetf(ios::left);
+    cout << setw(20) << setfill('.') << "$ " << right << gross << endl;
+    cout.unsetf(ios::right);
+    cout << "Federal Tax: ";
+    cout.unsetf(ios::left);
+    cout << setw(20) << setfill('.') << "$ " << right << (15*gross)/100 << endl;
     cout << "State Tax: " << "$ " << (3*gross)/100 << endl;
     cout << "Social Security Tax: " << "$ " << (5.75*gross)/100 << endl;
     cout << "Medicare/Medicaid Tax: " << "$ " << (2.75*gross)/100 << endl;
