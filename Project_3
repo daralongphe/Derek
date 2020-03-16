@@ -1,0 +1,40 @@
+#include <iostream>
+#include <fstream>
+#include <iomanip>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    //ofstream outfile;
+    string fname;
+    string lname;
+    double gross;
+    cout << "A list of deductions from the NET PAY from the Paycheck" << endl;
+    cout << "Federal Income Tax 15%\nState Tax: 3%\nSocial Security Tax: 5.75%\nMedicare/Medicaid Tax: 2.75%\nPension Plan: 5%\nHealth Insurance: $75.00" << endl;
+    //outfile.open("monthly_paycheck.txt");
+    cout << "************************************************************" << endl;
+    cout << "Enter Employee name: ";
+    cin >> fname >> lname;
+    cout << "Enter " << fname << " " << lname << "'s Gross salary amount: ";
+    cin >> gross;
+    
+    cout << "************************************************************" << endl;
+    cout << fixed << showpoint << setprecision(2);
+    cout << left;
+    cout << fname << " " << lname << endl;
+    cout << "Gross amount: " << "$" << gross << endl;
+    cout << "Federal Tax: " << "$ " << (15*gross)/100 << endl;
+    cout << "State Tax: " << "$ " << (3*gross)/100 << endl;
+    cout << "Social Security Tax: " << "$ " << (5.75*gross)/100 << endl;
+    cout << "Medicare/Medicaid Tax: " << "$ " << (2.75*gross)/100 << endl;
+    cout << "Pension Plan: " << "$ " << (5*gross)/100 << endl;
+    cout << "Health Insurance: " << "$ " << "75.00" << endl;
+    //outfile << fixed << showpoint;
+    //outfile << setprecision(2);
+    
+    //outfile << left << fname << " " << lname;
+
+    return 0;
+}
