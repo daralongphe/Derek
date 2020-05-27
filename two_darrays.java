@@ -3,7 +3,7 @@
 //CS 21
 import java.util.*;
 
-public class Quiz
+public class two_darrays
 {
     public static void main(String [] args)
     {
