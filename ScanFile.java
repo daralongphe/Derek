@@ -3,7 +3,7 @@
 import java.util.*;
 import java.io.*;
 
-public class Final
+public class ScanFile
 {
     public static void main (String[] args) throws FileNotFoundException
     {
