@@ -279,7 +279,7 @@ int main()
 	cout << "Project 3" << endl;
 	cout << "Long Beach City College" << endl;
 	cout << "Author: Chandaralong Phe" << endl;
-	cout << "Apr. 2nd, 2020" << endl;
+	cout << "Apr. 2, 2020" << endl;
 	cout << "======================================================================" << endl;
 
 	string line;
